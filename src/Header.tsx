@@ -1,10 +1,12 @@
+import styles from "./Header.module.css";
+
 export const Header = () => {
   const handleSearchInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     console.log(`Searched ${e.target.value}`);
   };
 
   return (
-    <div>
+    <div className={styles.container}>
       <a href="./">Q & A</a>
       <input
         type="text"
